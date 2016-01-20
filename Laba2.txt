@@ -1,0 +1,18 @@
+Демонстрация /me:
+
+
+http GET http://localhost:5000/me Authorization:"Bearer 3252ad8a90787cf5ac392d3b1a41f8c1cd946bdd49192d1e2e4dd24191166f31"
+Демонстрация API:
+
+http GET http://localhost:5000/semantics/ Authorization:"Bearer 3252ad8a90787cf5ac392d3b1a41f8c1cd946bdd49192d1e2e4dd24191166f31"
+http GET http://localhost:5000/semantics/ Authorization:"Bearer 3252ad8a90787cf5ac392d3b1a41f8c1cd946bdd49192d1e2e4dd24191166f31" page==2
+http GET http://localhost:5000/semantics/12 Authorization:"Bearer 3252ad8a90787cf5ac392d3b1a41f8c1cd946bdd49192d1e2e4dd24191166f31"
+http POST http://localhost:5000/semantics/ Authorization:"Bearer 3252ad8a90787cf5ac392d3b1a41f8c1cd946bdd49192d1e2e4dd24191166f31" function=Cool_funtion semantic="Cool semantic"
+http DELETE http://localhost:5000/semantics/36
+Демонстрация авторизации:
+
+
+http://localhost:5000/oauth/authorize?response_type=code&client_id=0985860f89b7354d2e2608db272b870f706e0dd8b2f41d57e191848bcb2b8419&state=2015
+
+
+http POST http://localhost:5000/oauth/token?client_id=03768212ce7aaa39b760b25397cbd73a1902d094c99456ce86e46b986da98a46&state=2015&grant_type=authorization_code&client_secret=263daef6846da5677b1207b0da76132714b3c106db9122a7ba52b215cc6eae0e&code==c3f923408c227d476d54ec2a1c27d8a67a6249a6eb54d3b1d5e344ddf2fc812e
